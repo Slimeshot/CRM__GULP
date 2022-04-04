@@ -1,0 +1,43 @@
+<section class="task" data-closeTask>
+    <div class="task__block">
+        <button class="map__close" data-closeTask></button>
+        <h3 class="tasK__title">Новая задача</h3>
+        <label>
+            <span class="task__object">Объект</span>
+            <input class="task__form-object" name="object" type="text" placeholder="Клиент" > 
+        </label>
+        <div class="task__row">
+            <input type="date" class="task__day">
+            <select class="task__time">
+                <option value="value1">Выполнено1</option>
+                <option value="value2" selected>17:40</option>
+                <option value="value3">Значение 3</option>
+            </select>
+            <span>для</span>
+            <select class="task__lead">
+                <option value="value1"selected>Артема</option>
+                <option value="value2" >Не выполнено</option>
+                <option value="value3">Значение 3</option>
+            </select>
+            <span>:</span>
+            <select class="task__status">
+                <option value="value1" selected>Связаться</option>
+                <option value="value2" >Не выполнено</option>
+                <option value="value3">Значение 3</option>
+            </select>
+        </div>
+
+
+        <label>
+            <span class="task__object">Текст задачи</span>
+            <textarea name="chat" class="task__chat" placeholder="Комментарий"></textarea>
+        </label>
+        <div class="task__group">
+            <button class="task__generate">Создать задачу</button>
+            <button class="task__closeTask" data-closeTask>Закрыть</button>
+        </div>
+            
+
+
+    </div>
+</section>

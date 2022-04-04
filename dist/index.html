@@ -1,0 +1,458 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>CRM</title>
+	<meta name="description" content="Startup HTML template OptimizedHTML 5">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link rel="icon" href="images/favicon.png">
+	<meta property="og:image" content="images/dist/preview.jpg">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/app.min.css">
+
+</head>
+
+
+	<header class="header">
+		<div class="container">
+			<div class="header__content">
+				<a href="#" class="header__logo">WeCanShip</a>
+				<div class="header__info">
+					<button class="header__button">Фильтр</button>
+				</div>
+			</div>
+		</div>
+	</header>
+
+
+	<section class="sidebar">
+		<ul class="sidebar__menu">
+			<li class="sidebar__list">
+				<div class="sidebar__link"><img src="images/dist/icons/funnel.svg" alt="">Воронка</div>
+				<div class="sidebar__block">
+					<a href="index.html" class="sidebar__sell">Продажи</a>
+					<a href="real.html" class="sidebar__real">Реализация</a>
+				</div>
+			</li>
+			<li class="sidebar__list"><a href="tasks.html" class="sidebar__link"><img src="images/dist/icons/chek.svg">Задачи</a></li>
+			<li class="sidebar__list"><a href="clients.html" class="sidebar__link"><img src="images/dist/icons/clients.svg">Клиенты</a></li>
+			<li class="sidebar__list"><a href="#" class="sidebar__link"><img src="images/dist/icons/analyt.svg">Аналитика</a></li>
+		</ul>
+	</section>
+
+<body>
+
+<div class="work">
+
+	<section class="funnel">
+		<div class="funnel__content">
+			<div class="funnel__column">
+				<div class="funnel__info">
+					<div class="funnel__counter funnel__counter-red">22</div>
+					<div class="funnel__label">Пришла заявка</div>
+				</div>
+				<div class="funnel__work" id="workColumn">
+					<div class="funnel__card card" draggable="true">
+						<div class="card__client">
+							<div class="card__name">Иванов Иван Иванович</div>
+							<div class="card__phone">+7 (980) 234-24-24</div>
+						</div>
+						<div class="card__info">
+							<div class="card__finance">
+								<img src="images/dist/icons/service.svg" alt="">
+								<div class="card__group">
+									<div class="card__service">Услуга такая-то</div>
+									<div class="card__price">223 564 ₽</div>
+								</div>
+							</div>
+							<div class="card__liable">
+								<img src="images/dist/icons/card.svg" alt="">
+								<div class="card__group">
+									<div class="card__responsible-name">Артем Иванов</div>
+									<div class="card__responsible">Ответственный</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="funnel__addLead">
+					<div class="funnel__block" id="addLead">
+						<span class="funnel__add">Добавить лид</span>
+						<span class="funnel__new">Новый лид</span>
+					</div>
+					<div class="funnel__form" id="formLead">
+						<label>
+							<span class="funnel__form-text">ФИО клиента</span>
+							<input class="funnel__form-name" name="name" type="text" placeholder="Иванов Иван Иванович"> 
+						</label>
+						<label>
+							<span class="funnel__form-text">Телефон клиента</span>
+							<input class="funnel__form-phone" name="phone" type="text" placeholder="+7 (999) 999-99-99"> 
+						</label>
+						<label>
+							<span class="funnel__form-text">Услуга</span>
+							<input class="funnel__form-service" name="service" type="text" placeholder="Название услуги"> 
+						</label>
+						<label>
+							<span class="funnel__form-text">Бюджет</span>
+							<input class="funnel__form-price" name="price" type="text" placeholder="999 999"> 
+						</label>
+						<label>
+							<span class="funnel__form-text">Ответственный</span>
+							<select name="select" class="funnel__form-select"> <!--Supplement an id here instead of using 'name'-->
+								<option value="value1" selected>Значение 1</option>
+								<option value="value2">Значение 2</option>
+								<option value="value3">Значение 3</option>
+							</select>
+						</label>
+						
+						
+						<button id="sendFormLead" class="btn funnel__form-btn" disabled>Добавить</button>
+					</div>
+				</div>
+			</div>
+	
+			<div class="funnel__column">
+				<div class="funnel__info">
+					<div class="funnel__counter funnel__counter-blue">22</div>
+					<div class="funnel__label">Позвонили</div>
+				</div>
+				<div class="funnel__work">
+					<div class="funnel__card card" draggable="true">
+						<div class="card__client">
+							<div class="card__name">Каранов Иван Иванович</div>
+							<div class="card__phone">+7 (980) 234-24-24</div>
+						</div>
+						<div class="card__info">
+							<div class="card__finance">
+								<img src="images/dist/icons/service.svg" alt="">
+								<div class="card__group">
+									<div class="card__service">Услуга такая-то</div>
+									<div class="card__price">223 564 ₽</div>
+								</div>
+							</div>
+							<div class="card__liable">
+								<img src="images/dist/icons/card.svg" alt="">
+								<div class="card__group">
+									<div class="card__responsible-name">Артем Иванов</div>
+									<div class="card__responsible">Ответственный</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	
+			<div class="funnel__column">
+				<div class="funnel__info">
+					<div class="funnel__counter funnel__counter-purple">22</div>
+					<div class="funnel__label">Рассматривают КП</div>
+				</div>
+				<div class="funnel__work">
+					<div class="funnel__card card" draggable="true">
+						<div class="card__client">
+							<div class="card__name">Саламонов Иван Иванович</div>
+							<div class="card__phone">+7 (980) 234-24-24</div>
+						</div>
+						<div class="card__info">
+							<div class="card__finance">
+								<img src="images/dist/icons/service.svg" alt="">
+								<div class="card__group">
+									<div class="card__service">Услуга такая-то</div>
+									<div class="card__price">223 564 ₽</div>
+								</div>
+							</div>
+							<div class="card__liable">
+								<img src="images/dist/icons/card.svg" alt="">
+								<div class="card__group">
+									<div class="card__responsible-name">Артем Иванов</div>
+									<div class="card__responsible">Ответственный</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	
+			<div class="funnel__column">
+				<div class="funnel__info">
+					<div class="funnel__counter funnel__counter-orange">22</div>
+					<div class="funnel__label">Ожидаем оплаты</div>
+				</div>
+				<div class="funnel__work">
+					<div class="funnel__card card" draggable="true">
+						<div class="card__client">
+							<div class="card__name">Кудрявцев Иван Иванович</div>
+							<div class="card__phone">+7 (980) 234-24-24</div>
+						</div>
+						<div class="card__info">
+							<div class="card__finance">
+								<img src="images/dist/icons/service.svg" alt="">
+								<div class="card__group">
+									<div class="card__service">Услуга такая-то</div>
+									<div class="card__price">223 564 ₽</div>
+								</div>
+							</div>
+							<div class="card__liable">
+								<img src="images/dist/icons/card.svg" alt="">
+								<div class="card__group">
+									<div class="card__responsible-name">Артем Иванов</div>
+									<div class="card__responsible">Ответственный</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	
+			<div class="funnel__column">
+				<div class="funnel__info">
+					<div class="funnel__counter funnel__counter-green">22</div>
+					<div class="funnel__label">Оплатили</div>
+				</div>
+				<div class="funnel__work">
+					<div class="funnel__card card" draggable="true">
+						<div class="card__client">
+							<div class="card__name">Молод Иван Иванович</div>
+							<div class="card__phone">+7 (980) 234-24-24</div>
+						</div>
+						<div class="card__info">
+							<div class="card__finance">
+								<img src="images/dist/icons/service.svg" alt="">
+								<div class="card__group">
+									<div class="card__service">Услуга такая-то</div>
+									<div class="card__price">223 564 ₽</div>
+								</div>
+							</div>
+							<div class="card__liable">
+								<img src="images/dist/icons/card.svg" alt="">
+								<div class="card__group">
+									<div class="card__responsible-name">Артем Иванов</div>
+									<div class="card__responsible">Ответственный</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		
+		</div>
+	</section>
+</div>
+
+
+<div class="filter" data-closeFilter>
+    <div class="filter__block">
+       <div class="filter__left">
+        <input class="filter__radioinput" id="open" name="filter" value="open" checked type="radio">
+        <label class="filter__checkboxLabel" for="open">
+            <span>Открытые лиды</span>
+        </label>
+        <input class="filter__radioinput" id="myLeads" name="filter" value="myLeads" type="radio">
+        <label class="filter__checkboxLabel" for="myLeads">
+            <span>Только мои лиды</span>
+        </label>
+        <input class="filter__radioinput" id="succes" name="filter" value="succes" type="radio">
+        <label class="filter__checkboxLabel" for="succes">
+            <span>Успешно завершенные</span>
+        </label>
+        <input class="filter__radioinput" id="norelize" name="filter" value="norelize" type="radio">
+        <label class="filter__checkboxLabel" for="norelize">
+            <span>Нереализованные лиды</span>
+        </label>
+       </div>
+       <div class="filter__right">
+           
+            <div class="filter__props">
+                Свойства лидов
+            </div>
+
+            <label>
+                <span class="filter__form-text">Сделка</span>
+                <input class="filter__form-lead" name="lead" type="text" placeholder="Название сделки" > 
+            </label>
+            <label>
+                <span class="filter__form-text">Статусы</span>
+                <input class="filter__form-status" name="status" type="text" placeholder="Активные статусы" > 
+            </label>
+            <label>
+                <span class="filter__form-text">Менеджеры</span>
+                <input class="filter__form-manager" name="manager" type="text" placeholder="Менеджеры" > 
+            </label>
+            <label>
+                <span class="filter__form-text">Кем создана</span>
+                <input class="filter__form-who" name="who" type="text" placeholder="Имя" > 
+            </label>
+            <label>
+                <span class="filter__form-text">Ответственный</span>
+                <select name="leader">
+                    <option value="Артем" selected>Артем</option>
+                </select>
+            </label>
+            <label>
+                <span class="filter__form-text">Бюджет</span>
+                <div>
+                    <input class="filter__form-min" name="pricemin" type="text" placeholder="от" > 
+                    <span>—</span>
+                    <input class="filter__form-max" name="pricemax" type="text" placeholder="до" > 
+                </div>
+            </label>
+            <label>
+                <span class="filter__form-text">Дата</span>
+                <input type="date" class="task__day">
+            </label>
+
+            <button class="filter__save">Сохранить</button>
+
+       </div>
+    </div>
+</div>
+<section class="map" data-closeCall>
+    <div class="map__block">
+        <button class="map__close" data-closeCall></button>
+        <div class="map__left">
+            <div class="map__txt">
+                <div class="map__status">Рассматривают КП</div>
+                <div class="map__name">Иванов Иван Иванович</div>
+            </div>
+            <div class="map__info">
+                <div class="map__form" id="formMap">
+					<label>
+						<span class="map__form-text">ФИО клиента</span>
+						<input class="map__form-name" name="name" type="text" placeholder="Иванов Иван Иванович" > 
+					</label>
+					<label>
+						<span class="map__form-text">Телефон клиента</span>
+						<input class="map__form-phone" name="phone" type="text" placeholder="+7 (999) 999-99-99" > 
+					</label>
+					<label>
+						<span class="map__form-text">Услуга</span>
+						<input class="map__form-service" name="service" type="text" placeholder="Название услуги" > 
+					</label>
+					<label>
+						<span class="map__form-text">Товар</span>
+						<input class="map__form-product" name="product" type="text" placeholder="Название товара" > 
+					</label>
+					<label>
+						<span class="map__form-text">Производитель</span>
+						<input class="map__form-proizvod" name="proizvod" type="text" placeholder="Название производителя" > 
+					</label>
+					<label>
+						<span class="map__form-text">Бюджет</span>
+						<input class="map__form-price" name="price" type="text" placeholder="999 999" > 
+					</label>
+					<label>
+						<span class="map__form-text">Ответственный</span>
+						<select name="select" class="map__form-select"> <!--Supplement an id here instead of using 'name'-->
+							<option value="value1" selected>Значение 1</option>
+							<option value="value2">Значение 2</option>
+							<option value="value3">Значение 3</option>
+						</select>
+					</label>
+                    <label>
+						<span class="map__form-text">Комментарий</span>
+						<textarea class="map__form-area" name="text" type="text" placeholder="Комментарий"> </textarea>
+					</label>
+				</div>
+
+                <div class="map__files">
+                    <div class="map__group">
+                        <img src="images/dist/icons/download.svg" alt="download">
+                        <div class="map__data">
+                            <div class="map__file-name">Файл сделки</div>
+                            <div class="map__file-download">Скачать 1,3 мб</div>
+                        </div>
+                    </div>
+                    <div class="map__group">
+                        <img src="images/dist/icons/download.svg" alt="download">
+                        <div class="map__data">
+                            <div class="map__file-name">Файл продажи</div>
+                            <div class="map__file-download">Скачать 1,3 мб</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="map__right">
+            <div class="map__history">
+                <div class="map__mess">
+                    <div class="map__date">
+                        <div class="map__day map__day-text">17.02.2022</div>
+                        <div class="map__time map__day-text">22:40</div>
+                    </div>
+                    <div class="map__warn">
+                        Исходящий звонок, разговор состоялся
+                    </div>
+                </div>
+                <div class="map__mess">
+                    <div class="map__date">
+                        <div class="map__day map__day-text">17.02.2022</div>
+                        <div class="map__time map__day-text">22:40</div>
+                    </div>
+                    <div class="map__korobs">
+                        <img src="images/dist/icons/circle-check.svg" alt="check">
+                        <div class="map__box">
+                            <div class="map__dob">Добавлена задача</div>
+                            <div class="map__recall">Перезвонить</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="map__area">
+                <textarea name="chat" class="map__chat" placeholder="Введите текст"></textarea>
+                <button class="map__send">Отправить</button>
+                <button class="map__task">+ Задача</button>
+                <a href="" class="map__add"><img src="images//dist/icons/clip.svg">Прикрепить</a>
+
+
+                <div class="map__newTask">
+                    <div class="task__row">
+                        <div class="map__newTitle">Новая задача</div>
+                        <input type="date" class="task__day">
+                        <select class="task__time">
+                            <option value="value1">Выполнено1</option>
+                            <option value="value2" selected>17:40</option>
+                            <option value="value3">Значение 3</option>
+                        </select>
+                        <span>для</span>
+                        <select class="task__lead">
+                            <option value="value1"selected>Артема</option>
+                            <option value="value2" >Не выполнено</option>
+                            <option value="value3">Значение 3</option>
+                        </select>
+                        <span>:</span>
+                        <select class="task__status">
+                            <option value="value1" selected>Связаться</option>
+                            <option value="value2" >Не выполнено</option>
+                            <option value="value3">Значение 3</option>
+                        </select>
+                    </div>
+            
+            
+                    <label>
+                        <span class="task__object">Текст задачи</span>
+                        <textarea name="chat" class="task__chat" placeholder="Комментарий"></textarea>
+                    </label>
+                    <div class="task__group">
+                        <button class="task__generate">Создать задачу</button>
+                        <button class="task__closeTask" data-closeTask>Закрыть</button>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </div>
+</section>
+	<script src="js/app.min.js"></script>
+
+</body>
+</html>

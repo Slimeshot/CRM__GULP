@@ -1,0 +1,21 @@
+.clients {
+    // position: absolute;
+    padding-top: 32px;
+    padding-left: 24px;
+    // padding-right: 24px;
+    width: 100%;
+    // height: auto;
+    min-height: 100%;
+    // height: calc(100% - 75px);
+}
+.clients__content {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    // justify-content: space-between;
+    // flex-wrap: wrap;
+}
+.clients__card {
+    grid-column: span 1;
+    margin-right: 24px;
+    margin-bottom: 24px;
+}

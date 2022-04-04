@@ -1,0 +1,50 @@
+.tasks {
+    // padding-left: 225px;
+    width: 100%;
+    min-height: 100%;
+}
+.tasks__content {
+}
+.tasks__row {
+    display: flex;
+    border-bottom: 1px solid #E7E7E7;
+    select {
+        border: none;
+        border-right: 1px solid #E7E7E7;
+    }
+    option {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+        color: #646464;
+        padding: 24px;
+    }
+}
+
+.tasks__info {
+    flex: 1;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: #646464;
+    padding: 24px;
+    border-right: 1px solid #E7E7E7;
+}
+.tasks__deadline {
+}
+.tasks__leader {
+}
+.tasks__object {
+}
+.tasks__type {
+}
+.tasks__status {
+}
+.tasks__text {
+}
+.tasks__map {
+}

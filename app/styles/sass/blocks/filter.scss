@@ -1,0 +1,141 @@
+.filter {
+    position: absolute;
+    top: 75px;
+    left: 226px;
+    width: 100%;
+    bottom: 0!important;
+    height: auto!important;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 150;
+    display: none;
+    pointer-events: none;
+    overflow: auto;
+}
+.filter__block {
+    background: #FFFFFF;
+    transition: all .5s ease;
+    display: flex;
+}
+
+.filter.active {
+    display: flex;
+    align-items: flex-start;
+    background-color: rgba(0, 0, 0, .25);
+    pointer-events: all;
+    .filter__block {
+        transition: 1.3 ease;
+    }
+}
+
+
+
+.filter__left {
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #E7E7E7;
+    min-width: 330px;
+}
+
+
+
+
+.filter__radioinput {
+    display: none;
+    &:checked + .filter__checkboxLabel {
+        background-color: #4671F5;
+        color: #fff;
+      }
+}
+.filter__checkboxLabel {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: #000000;
+    padding: 24px;
+    cursor: pointer;
+    display: inline-block;
+    transition: background-color .2s ease, color .2s ease;
+    border-bottom: 1px solid #E7E7E7;
+
+    &:last-child {
+    }
+    &:checked {
+        background-color: black;
+    }
+
+}
+
+
+.filter__right {
+    padding: 24px;
+    min-width: 350px;
+    display: flex;
+    flex-direction: column;
+
+    input, select {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        color: #C7C7C7;
+        padding: 12px 16px;
+        border: 1px solid #EFEFEF;
+        margin-bottom: 24px;
+    }
+    .filter__form-min {
+        text-align: center;
+    }
+    .filter__form-max {
+        text-align: center;
+    }
+}
+.filter__props {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 18px;
+    color: #000000;
+    margin-bottom: 24px;
+}
+.filter__form-text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #646464;
+    margin-bottom: 6px;
+}
+
+.filter__save {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    background-color: #4671F5;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+}
+.filter__form-lead {
+}
+.filter__form-status {
+}
+.filter__form-manager {
+}
+.filter__form-who {
+}
+.filter__form-select {
+}
+.filter__form-min {
+}
+.filter__form-max {
+}
+.task__day {
+}

@@ -1,0 +1,66 @@
+<div class="filter" data-closeFilter>
+    <div class="filter__block">
+       <div class="filter__left">
+        <input class="filter__radioinput" id="open" name="filter" value="open" checked type="radio">
+        <label class="filter__checkboxLabel" for="open">
+            <span>Открытые лиды</span>
+        </label>
+        <input class="filter__radioinput" id="myLeads" name="filter" value="myLeads" type="radio">
+        <label class="filter__checkboxLabel" for="myLeads">
+            <span>Только мои лиды</span>
+        </label>
+        <input class="filter__radioinput" id="succes" name="filter" value="succes" type="radio">
+        <label class="filter__checkboxLabel" for="succes">
+            <span>Успешно завершенные</span>
+        </label>
+        <input class="filter__radioinput" id="norelize" name="filter" value="norelize" type="radio">
+        <label class="filter__checkboxLabel" for="norelize">
+            <span>Нереализованные лиды</span>
+        </label>
+       </div>
+       <div class="filter__right">
+           
+            <div class="filter__props">
+                Свойства лидов
+            </div>
+
+            <label>
+                <span class="filter__form-text">Сделка</span>
+                <input class="filter__form-lead" name="lead" type="text" placeholder="Название сделки" > 
+            </label>
+            <label>
+                <span class="filter__form-text">Статусы</span>
+                <input class="filter__form-status" name="status" type="text" placeholder="Активные статусы" > 
+            </label>
+            <label>
+                <span class="filter__form-text">Менеджеры</span>
+                <input class="filter__form-manager" name="manager" type="text" placeholder="Менеджеры" > 
+            </label>
+            <label>
+                <span class="filter__form-text">Кем создана</span>
+                <input class="filter__form-who" name="who" type="text" placeholder="Имя" > 
+            </label>
+            <label>
+                <span class="filter__form-text">Ответственный</span>
+                <select name="leader">
+                    <option value="Артем" selected>Артем</option>
+                </select>
+            </label>
+            <label>
+                <span class="filter__form-text">Бюджет</span>
+                <div>
+                    <input class="filter__form-min" name="pricemin" type="text" placeholder="от" > 
+                    <span>—</span>
+                    <input class="filter__form-max" name="pricemax" type="text" placeholder="до" > 
+                </div>
+            </label>
+            <label>
+                <span class="filter__form-text">Дата</span>
+                <input type="date" class="task__day">
+            </label>
+
+            <button class="filter__save">Сохранить</button>
+
+       </div>
+    </div>
+</div>

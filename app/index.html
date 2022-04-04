@@ -1,0 +1,206 @@
+<!--#set var="title" value="CRM" -->
+<!--#include virtual="/parts/header.html" -->
+
+<div class="work">
+
+	<section class="funnel">
+		<div class="funnel__content">
+			<div class="funnel__column">
+				<div class="funnel__info">
+					<div class="funnel__counter funnel__counter-red">22</div>
+					<div class="funnel__label">Пришла заявка</div>
+				</div>
+				<div class="funnel__work" id="workColumn">
+					<div class="funnel__card card" draggable="true">
+						<div class="card__client">
+							<div class="card__name">Иванов Иван Иванович</div>
+							<div class="card__phone">+7 (980) 234-24-24</div>
+						</div>
+						<div class="card__info">
+							<div class="card__finance">
+								<img src="images/dist/icons/service.svg" alt="">
+								<div class="card__group">
+									<div class="card__service">Услуга такая-то</div>
+									<div class="card__price">223 564 ₽</div>
+								</div>
+							</div>
+							<div class="card__liable">
+								<img src="images/dist/icons/card.svg" alt="">
+								<div class="card__group">
+									<div class="card__responsible-name">Артем Иванов</div>
+									<div class="card__responsible">Ответственный</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="funnel__addLead">
+					<div class="funnel__block" id="addLead">
+						<span class="funnel__add">Добавить лид</span>
+						<span class="funnel__new">Новый лид</span>
+					</div>
+					<div class="funnel__form" id="formLead">
+						<label>
+							<span class="funnel__form-text">ФИО клиента</span>
+							<input class="funnel__form-name" name="name" type="text" placeholder="Иванов Иван Иванович"> 
+						</label>
+						<label>
+							<span class="funnel__form-text">Телефон клиента</span>
+							<input class="funnel__form-phone" name="phone" type="text" placeholder="+7 (999) 999-99-99"> 
+						</label>
+						<label>
+							<span class="funnel__form-text">Услуга</span>
+							<input class="funnel__form-service" name="service" type="text" placeholder="Название услуги"> 
+						</label>
+						<label>
+							<span class="funnel__form-text">Бюджет</span>
+							<input class="funnel__form-price" name="price" type="text" placeholder="999 999"> 
+						</label>
+						<label>
+							<span class="funnel__form-text">Ответственный</span>
+							<select name="select" class="funnel__form-select"> <!--Supplement an id here instead of using 'name'-->
+								<option value="value1" selected>Значение 1</option>
+								<option value="value2">Значение 2</option>
+								<option value="value3">Значение 3</option>
+							</select>
+						</label>
+						
+						
+						<button id="sendFormLead" class="btn funnel__form-btn" disabled>Добавить</button>
+					</div>
+				</div>
+			</div>
+	
+			<div class="funnel__column">
+				<div class="funnel__info">
+					<div class="funnel__counter funnel__counter-blue">22</div>
+					<div class="funnel__label">Позвонили</div>
+				</div>
+				<div class="funnel__work">
+					<div class="funnel__card card" draggable="true">
+						<div class="card__client">
+							<div class="card__name">Каранов Иван Иванович</div>
+							<div class="card__phone">+7 (980) 234-24-24</div>
+						</div>
+						<div class="card__info">
+							<div class="card__finance">
+								<img src="images/dist/icons/service.svg" alt="">
+								<div class="card__group">
+									<div class="card__service">Услуга такая-то</div>
+									<div class="card__price">223 564 ₽</div>
+								</div>
+							</div>
+							<div class="card__liable">
+								<img src="images/dist/icons/card.svg" alt="">
+								<div class="card__group">
+									<div class="card__responsible-name">Артем Иванов</div>
+									<div class="card__responsible">Ответственный</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	
+			<div class="funnel__column">
+				<div class="funnel__info">
+					<div class="funnel__counter funnel__counter-purple">22</div>
+					<div class="funnel__label">Рассматривают КП</div>
+				</div>
+				<div class="funnel__work">
+					<div class="funnel__card card" draggable="true">
+						<div class="card__client">
+							<div class="card__name">Саламонов Иван Иванович</div>
+							<div class="card__phone">+7 (980) 234-24-24</div>
+						</div>
+						<div class="card__info">
+							<div class="card__finance">
+								<img src="images/dist/icons/service.svg" alt="">
+								<div class="card__group">
+									<div class="card__service">Услуга такая-то</div>
+									<div class="card__price">223 564 ₽</div>
+								</div>
+							</div>
+							<div class="card__liable">
+								<img src="images/dist/icons/card.svg" alt="">
+								<div class="card__group">
+									<div class="card__responsible-name">Артем Иванов</div>
+									<div class="card__responsible">Ответственный</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	
+			<div class="funnel__column">
+				<div class="funnel__info">
+					<div class="funnel__counter funnel__counter-orange">22</div>
+					<div class="funnel__label">Ожидаем оплаты</div>
+				</div>
+				<div class="funnel__work">
+					<div class="funnel__card card" draggable="true">
+						<div class="card__client">
+							<div class="card__name">Кудрявцев Иван Иванович</div>
+							<div class="card__phone">+7 (980) 234-24-24</div>
+						</div>
+						<div class="card__info">
+							<div class="card__finance">
+								<img src="images/dist/icons/service.svg" alt="">
+								<div class="card__group">
+									<div class="card__service">Услуга такая-то</div>
+									<div class="card__price">223 564 ₽</div>
+								</div>
+							</div>
+							<div class="card__liable">
+								<img src="images/dist/icons/card.svg" alt="">
+								<div class="card__group">
+									<div class="card__responsible-name">Артем Иванов</div>
+									<div class="card__responsible">Ответственный</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	
+			<div class="funnel__column">
+				<div class="funnel__info">
+					<div class="funnel__counter funnel__counter-green">22</div>
+					<div class="funnel__label">Оплатили</div>
+				</div>
+				<div class="funnel__work">
+					<div class="funnel__card card" draggable="true">
+						<div class="card__client">
+							<div class="card__name">Молод Иван Иванович</div>
+							<div class="card__phone">+7 (980) 234-24-24</div>
+						</div>
+						<div class="card__info">
+							<div class="card__finance">
+								<img src="images/dist/icons/service.svg" alt="">
+								<div class="card__group">
+									<div class="card__service">Услуга такая-то</div>
+									<div class="card__price">223 564 ₽</div>
+								</div>
+							</div>
+							<div class="card__liable">
+								<img src="images/dist/icons/card.svg" alt="">
+								<div class="card__group">
+									<div class="card__responsible-name">Артем Иванов</div>
+									<div class="card__responsible">Ответственный</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		
+		</div>
+	</section>
+</div>
+
+
+<!--#include virtual="/parts/filter.html" -->
+<!--#include virtual="/parts/map.html" -->
+<!--#include virtual="/parts/footer.html" -->

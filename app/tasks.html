@@ -1,0 +1,39 @@
+<!--#set var="title" value="CRM" -->
+<!--#include virtual="/parts/headerTask.html" -->
+
+<div class="work">
+    <section class="tasks">
+        <div class="tasks__content">
+            <div class="tasks__row">
+                <div class="tasks__deadline tasks__info">Срок выполнения</div>
+                <div class="tasks__leader tasks__info">Ответственный</div>
+                <div class="tasks__object tasks__info">Объект</div>
+                <div class="tasks__type tasks__info">Тип задачи</div>
+                <div class="tasks__status tasks__info">Статус задачи</div>
+                <div class="tasks__text tasks__info">Текст задачи</div>
+                <div class="tasks__map tasks__info">Сделка</div>
+            </div> 
+            <div class="tasks__row">
+                <div class="tasks__deadline tasks__info">17.02.2022 22:40</div>
+                <div class="tasks__leader tasks__info">Артём Иванов</div>
+                <div class="tasks__object tasks__info">Иванов Иван Иванович</div>
+                <select class="tasks__type tasks__info">
+                    <option value="value1" selected>Перезвонить</option>
+                    <option value="value2">Значение 2</option>
+                    <option value="value3">Значение 3</option>
+                </select>
+                <select class="tasks__status tasks__info">
+                    <option value="value1">Выполнено1</option>
+                    <option value="value2" selected>Не выполнено</option>
+                    <option value="value3">Значение 3</option>
+                </select>
+                <div class="tasks__text tasks__info">Срочно нужно позвонить</div>
+                <div class="tasks__map tasks__info">link</div>
+            </div> 
+        </div>
+    </section>
+</div>
+
+<!--#include virtual="/parts/map.html" -->
+<!--#include virtual="/parts/newTask.html" -->
+<!--#include virtual="/parts/footer.html" -->
